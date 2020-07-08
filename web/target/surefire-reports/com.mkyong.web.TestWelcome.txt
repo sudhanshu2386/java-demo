@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.mkyong.web.TestWelcome
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.824 s <<< FAILURE! - in com.mkyong.web.TestWelcome
+testDefault  Time elapsed: 0.942 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/views/index.html]")
+	at com.mkyong.web.TestWelcome.testDefault(TestWelcome.java:37)
+Caused by: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/views/index.html]")
+	at com.mkyong.web.TestWelcome.testDefault(TestWelcome.java:37)
+Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/views/index.html]
+	at com.mkyong.web.TestWelcome.testDefault(TestWelcome.java:37)
+
